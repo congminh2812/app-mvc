@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj": {}
+    "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.csproj": {}
   },
   "projects": {
-    "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj": {
+    "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj",
+        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.csproj",
         "projectName": "AppMVC",
-        "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj",
-        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\obj\\",
+        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.csproj",
+        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
+        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Dev\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "E:\\Dev\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
