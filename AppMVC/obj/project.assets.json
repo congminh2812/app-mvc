@@ -3661,6 +3661,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "AppMVC.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AppMVC.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.2",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2"
+        },
+        "compile": {
+          "bin/placeholder/AppMVC.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppMVC.DataAccess.dll": {}
+        }
+      },
+      "AppMVC.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/AppMVC.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppMVC.Models.dll": {}
+        }
       }
     }
   },
@@ -10599,10 +10625,22 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "AppMVC.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../AppMVC.DataAccess/AppMVC.DataAccess.csproj",
+      "msbuildProject": "../AppMVC.DataAccess/AppMVC.DataAccess.csproj"
+    },
+    "AppMVC.Models/1.0.0": {
+      "type": "project",
+      "path": "../AppMVC.Models/AppMVC.Models.csproj",
+      "msbuildProject": "../AppMVC.Models/AppMVC.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "AppMVC.DataAccess >= 1.0.0",
+      "AppMVC.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
@@ -10610,24 +10648,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CONG MINH\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\CM Developer\\.nuget\\packages\\": {},
+    "E:\\Dev\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.csproj",
+      "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj",
       "projectName": "AppMVC",
-      "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.csproj",
-      "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\obj\\",
+      "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj",
+      "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
+      "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Dev\\Components\\Offline Packages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10635,13 +10673,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "E:\\Dev\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
+              "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj"
+            },
+            "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj": {
+              "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

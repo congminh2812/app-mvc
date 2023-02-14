@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {}
+  },
+  "projects": {
+    "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
+        "projectName": "AppMVC.DataAccess",
+        "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
+        "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Dev\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Dev\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj": {
+                "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj",
+        "projectName": "AppMVC.Models",
+        "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj",
+        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
+        "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Dev\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Dev\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

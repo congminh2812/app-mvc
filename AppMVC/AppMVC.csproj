@@ -16,6 +16,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AppMVC.DataAccess\AppMVC.DataAccess.csproj" />
+    <ProjectReference Include="..\AppMVC.Models\AppMVC.Models.csproj" />
+  </ItemGroup>
+
 </Project>
 <!--
     - This is project file.

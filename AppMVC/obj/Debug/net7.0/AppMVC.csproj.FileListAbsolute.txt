@@ -548,3 +548,7 @@ E:\ProjectASP\app-mvc\AppMVC\obj\Debug\net7.0\refint\AppMVC.dll
 E:\ProjectASP\app-mvc\AppMVC\obj\Debug\net7.0\AppMVC.pdb
 E:\ProjectASP\app-mvc\AppMVC\obj\Debug\net7.0\AppMVC.genruntimeconfig.cache
 E:\ProjectASP\app-mvc\AppMVC\obj\Debug\net7.0\ref\AppMVC.dll
+E:\ProjectASP\app-mvc\AppMVC\bin\Debug\net7.0\AppMVC.DataAccess.dll
+E:\ProjectASP\app-mvc\AppMVC\bin\Debug\net7.0\AppMVC.Models.dll
+E:\ProjectASP\app-mvc\AppMVC\bin\Debug\net7.0\AppMVC.DataAccess.pdb
+E:\ProjectASP\app-mvc\AppMVC\bin\Debug\net7.0\AppMVC.Models.pdb
