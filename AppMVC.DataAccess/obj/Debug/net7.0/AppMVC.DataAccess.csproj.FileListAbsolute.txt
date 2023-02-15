@@ -13,3 +13,5 @@ E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.dll
 E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\refint\AppMVC.DataAccess.dll
 E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.pdb
 E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\ref\AppMVC.DataAccess.dll
+E:\ProjectASP\app-mvc\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.runtimeconfig.json
+E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.genruntimeconfig.cache

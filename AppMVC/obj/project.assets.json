@@ -10654,9 +10654,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj",
-      "projectName": "AppMVC",
-      "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.csproj",
+      "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.Web.csproj",
+      "projectName": "AppMVC.Web",
+      "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.Web.csproj",
       "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
       "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\obj\\",
       "projectStyle": "PackageReference",

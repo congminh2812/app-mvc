@@ -1,0 +1,12 @@
+E:\ProjectASP\app-mvc\AppMVC.Utility\bin\Debug\net7.0\AppMVC.Utility.deps.json
+E:\ProjectASP\app-mvc\AppMVC.Utility\bin\Debug\net7.0\AppMVC.Utility.dll
+E:\ProjectASP\app-mvc\AppMVC.Utility\bin\Debug\net7.0\AppMVC.Utility.pdb
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.csproj.AssemblyReference.cache
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.AssemblyInfoInputs.cache
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.AssemblyInfo.cs
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.csproj.CoreCompileInputs.cache
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.dll
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\refint\AppMVC.Utility.dll
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.pdb
+E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\ref\AppMVC.Utility.dll
