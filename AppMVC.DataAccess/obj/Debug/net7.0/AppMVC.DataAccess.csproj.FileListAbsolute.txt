@@ -15,3 +15,20 @@ E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.pdb
 E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\ref\AppMVC.DataAccess.dll
 E:\ProjectASP\app-mvc\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.runtimeconfig.json
 E:\ProjectASP\app-mvc\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.genruntimeconfig.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.csproj.AssemblyReference.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.AssemblyInfoInputs.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.AssemblyInfo.cs
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.csproj.CoreCompileInputs.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\refint\AppMVC.DataAccess.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.pdb
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.deps.json
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.runtimeconfig.json
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.pdb
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.Models.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.Models.pdb
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.csproj.CopyComplete
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.genruntimeconfig.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\ref\AppMVC.DataAccess.dll

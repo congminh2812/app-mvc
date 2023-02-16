@@ -1,4 +1,5 @@
 ﻿using AppMVC.DataAccess.Data;
+using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,14 +7,14 @@ namespace AppMVC.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public CategoryController(ApplicationDbContext db)
+        private readonly ICategoryRepository _categoryRepository;
+        public CategoryController(ICategoryRepository categoryRepository)
         {
-            this._db = db;
+            _categoryRepository = categoryRepository;
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> listCategory = _db.Categories;
+            IEnumerable<Category> listCategory = _categoryRepository.GetAll();
             return View(listCategory);
         }
 
@@ -33,8 +34,8 @@ namespace AppMVC.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(category);
-                _db.SaveChanges();
+                _categoryRepository.Add(category);
+                _categoryRepository.Save();
                 TempData["success"] = "Create category successfully!";
                 return RedirectToAction("Index");
             }
@@ -48,7 +49,7 @@ namespace AppMVC.Controllers
             if (id is (null or 0))
                 return NotFound();
 
-            var category = _db.Categories.Find(id);
+            var category = _categoryRepository.GetFirstOrDefault(s => s.Id == id);
 
             if (category is null) return NotFound();
 
@@ -66,8 +67,8 @@ namespace AppMVC.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(category);
-                _db.SaveChanges();
+                _categoryRepository.Update(category);
+                _categoryRepository.Save();
                 TempData["success"]="Update category successfully!";
                 return RedirectToAction("Index");
             }
@@ -80,7 +81,7 @@ namespace AppMVC.Controllers
             if (id is (null or 0))
                 return NotFound();
 
-            var category = _db.Categories.Find(id);
+            var category = _categoryRepository.GetFirstOrDefault(s => s.Id == id);
 
             if (category is null) return NotFound();
 
@@ -91,12 +92,12 @@ namespace AppMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var category = _db.Categories.Find(id);
+            var category = _categoryRepository.GetFirstOrDefault(s => s.Id == id);
 
             if (category is null) return NotFound();
 
-            _db.Categories.Remove(category);
-            _db.SaveChanges();
+            _categoryRepository.Remove(category);
+            _categoryRepository.Save();
             TempData["success"]="Delete category successfully!";
 
             return RedirectToAction("Index");

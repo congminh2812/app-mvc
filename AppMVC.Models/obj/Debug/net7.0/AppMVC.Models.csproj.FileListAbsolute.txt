@@ -10,3 +10,15 @@ E:\ProjectASP\app-mvc\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.dll
 E:\ProjectASP\app-mvc\AppMVC.Models\obj\Debug\net7.0\refint\AppMVC.Models.dll
 E:\ProjectASP\app-mvc\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.pdb
 E:\ProjectASP\app-mvc\AppMVC.Models\obj\Debug\net7.0\ref\AppMVC.Models.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\bin\Debug\net7.0\AppMVC.Models.deps.json
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\bin\Debug\net7.0\AppMVC.Models.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\bin\Debug\net7.0\AppMVC.Models.pdb
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.csproj.AssemblyReference.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.AssemblyInfoInputs.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.AssemblyInfo.cs
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.csproj.CoreCompileInputs.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\refint\AppMVC.Models.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\AppMVC.Models.pdb
+D:\ASP.Net Core API\AppMVC\AppMVC.Models\obj\Debug\net7.0\ref\AppMVC.Models.dll
