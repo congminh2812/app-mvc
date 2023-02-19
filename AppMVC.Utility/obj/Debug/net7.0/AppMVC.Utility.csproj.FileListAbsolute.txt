@@ -10,3 +10,15 @@ E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.dll
 E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\refint\AppMVC.Utility.dll
 E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.pdb
 E:\ProjectASP\app-mvc\AppMVC.Utility\obj\Debug\net7.0\ref\AppMVC.Utility.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\bin\Debug\net7.0\AppMVC.Utility.deps.json
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\bin\Debug\net7.0\AppMVC.Utility.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\bin\Debug\net7.0\AppMVC.Utility.pdb
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.csproj.AssemblyReference.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.AssemblyInfoInputs.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.AssemblyInfo.cs
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.csproj.CoreCompileInputs.cache
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\refint\AppMVC.Utility.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\AppMVC.Utility.pdb
+D:\ASP.Net Core API\AppMVC\AppMVC.Utility\obj\Debug\net7.0\ref\AppMVC.Utility.dll

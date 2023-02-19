@@ -44,6 +44,23 @@ namespace AppMVC.DataAccess.Migrations
 
                     b.ToTable("Categories");
                 });
+
+            modelBuilder.Entity("AppMVC.Models.Type", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Types");
+                });
 #pragma warning restore 612, 618
         }
     }

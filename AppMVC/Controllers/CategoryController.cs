@@ -7,14 +7,14 @@ namespace AppMVC.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository _categoryRepository;
-        public CategoryController(ICategoryRepository categoryRepository)
+        private readonly IUnitOfWork _unitOfWork;
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _categoryRepository = categoryRepository;
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> listCategory = _categoryRepository.GetAll();
+            IEnumerable<Category> listCategory = _unitOfWork.Category.GetAll();
             return View(listCategory);
         }
 
@@ -34,8 +34,8 @@ namespace AppMVC.Controllers
 
             if (ModelState.IsValid)
             {
-                _categoryRepository.Add(category);
-                _categoryRepository.Save();
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Save();
                 TempData["success"] = "Create category successfully!";
                 return RedirectToAction("Index");
             }
@@ -49,7 +49,7 @@ namespace AppMVC.Controllers
             if (id is (null or 0))
                 return NotFound();
 
-            var category = _categoryRepository.GetFirstOrDefault(s => s.Id == id);
+            var category = _unitOfWork.Category.GetFirstOrDefault(s => s.Id == id);
 
             if (category is null) return NotFound();
 
@@ -67,8 +67,8 @@ namespace AppMVC.Controllers
 
             if (ModelState.IsValid)
             {
-                _categoryRepository.Update(category);
-                _categoryRepository.Save();
+                _unitOfWork.Category.Update(category);
+                _unitOfWork.Save();
                 TempData["success"]="Update category successfully!";
                 return RedirectToAction("Index");
             }
@@ -81,7 +81,7 @@ namespace AppMVC.Controllers
             if (id is (null or 0))
                 return NotFound();
 
-            var category = _categoryRepository.GetFirstOrDefault(s => s.Id == id);
+            var category = _unitOfWork.Category.GetFirstOrDefault(s => s.Id == id);
 
             if (category is null) return NotFound();
 
@@ -92,12 +92,12 @@ namespace AppMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var category = _categoryRepository.GetFirstOrDefault(s => s.Id == id);
+            var category = _unitOfWork.Category.GetFirstOrDefault(s => s.Id == id);
 
             if (category is null) return NotFound();
 
-            _categoryRepository.Remove(category);
-            _categoryRepository.Save();
+            _unitOfWork.Category.Remove(category);
+            _unitOfWork.Save();
             TempData["success"]="Delete category successfully!";
 
             return RedirectToAction("Index");
