@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AppMVC",
+    "\\AppMVC\\obj",
+    "\\AppMVC\\Views",
+    "\\AppMVC\\Views\\Type"
   ],
+  "SelectedNode": "\\AppMVC.sln",
   "PreviewInSolutionExplorer": false
 }

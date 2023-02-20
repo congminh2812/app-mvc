@@ -1,8 +1,9 @@
 ﻿using AppMVC.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AppMVC.Web.Controllers
+namespace AppMVC.Web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class TypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -14,7 +15,7 @@ namespace AppMVC.Web.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Models.Type> listType = _unitOfWork.Type.GetAll(); 
+            IEnumerable<Models.Type> listType = _unitOfWork.Type.GetAll();
             return View(listType);
         }
 
@@ -24,7 +25,8 @@ namespace AppMVC.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Models.Type type) { 
+        public IActionResult Create(Models.Type type)
+        {
             if (ModelState.IsValid)
             {
                 _unitOfWork.Type.Add(type);
@@ -38,7 +40,7 @@ namespace AppMVC.Web.Controllers
 
         public IActionResult Edit(int? id)
         {
-            if (id is (null or 0))
+            if (id is null or 0)
                 return NotFound();
 
             var type = _unitOfWork.Type.GetFirstOrDefault(s => s.Id == id);
@@ -66,7 +68,7 @@ namespace AppMVC.Web.Controllers
 
         public IActionResult Delete(int? id)
         {
-            if (id is (null or 0))
+            if (id is null or 0)
                 return NotFound();
 
             var type = _unitOfWork.Type.GetFirstOrDefault(s => s.Id == id);

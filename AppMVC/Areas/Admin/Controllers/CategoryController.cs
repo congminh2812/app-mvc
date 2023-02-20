@@ -1,10 +1,10 @@
-﻿using AppMVC.DataAccess.Data;
-using AppMVC.DataAccess.Repository.IRepository;
+﻿using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AppMVC.Controllers
+namespace AppMVC.Web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -46,7 +46,7 @@ namespace AppMVC.Controllers
 
         public IActionResult Edit(int? id)
         {
-            if (id is (null or 0))
+            if (id is null or 0)
                 return NotFound();
 
             var category = _unitOfWork.Category.GetFirstOrDefault(s => s.Id == id);
@@ -69,7 +69,7 @@ namespace AppMVC.Controllers
             {
                 _unitOfWork.Category.Update(category);
                 _unitOfWork.Save();
-                TempData["success"]="Update category successfully!";
+                TempData["success"] = "Update category successfully!";
                 return RedirectToAction("Index");
             }
 
@@ -78,7 +78,7 @@ namespace AppMVC.Controllers
 
         public IActionResult Delete(int? id)
         {
-            if (id is (null or 0))
+            if (id is null or 0)
                 return NotFound();
 
             var category = _unitOfWork.Category.GetFirstOrDefault(s => s.Id == id);
@@ -98,7 +98,7 @@ namespace AppMVC.Controllers
 
             _unitOfWork.Category.Remove(category);
             _unitOfWork.Save();
-            TempData["success"]="Delete category successfully!";
+            TempData["success"] = "Delete category successfully!";
 
             return RedirectToAction("Index");
         }
