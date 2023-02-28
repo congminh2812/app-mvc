@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xSh/A1Jc9ANiGv3oiqlqJNM1YJZDfp8jg/3lm8ONFAFug1pTUu8IRJGePXNIXK0Oil6WB7mdYsQP32ALGqfrew==",
+  "dgSpecHash": "+OpOpl51dNa3gnl7n7aJRoq9N3vZyAjEGFxSnxAnPkVTcwI/6Cm96bX0hWde1yvX9BnVZAN/MIMZl78FWfH6Jg==",
   "success": true,
-  "projectFilePath": "E:\\ProjectASP\\app-mvc\\AppMVC.Utility\\AppMVC.Utility.csproj",
+  "projectFilePath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -22,18 +22,22 @@ namespace AppMVC.Web.Areas.Admin.Controllers
         public IActionResult Upsert(int? id)
         {
             var product = new Product();
-            IEnumerable<SelectListItem> categoryList = _unitOfWork.Category.GetAll().Select(s => new SelectListItem { Text = s.Name, Value = s.Id.ToString()});
+            IEnumerable<SelectListItem> categoryList = _unitOfWork.Category.GetAll().Select(s => new SelectListItem { Text = s.Name, Value = s.Id.ToString() });
             IEnumerable<SelectListItem> typeList = _unitOfWork.Type.GetAll().Select(s => new SelectListItem { Text = s.Name, Value = s.Id.ToString() });
 
             if (id is null or 0)
+            {
                 // create product
+                ViewBag.CategoryList = categoryList;
+                ViewData["TypeList"] = typeList;
                 return View(product);
+            }
             else
             {
                 // update product
             }
             return View(product);
         }
-      
+
     }
 }
