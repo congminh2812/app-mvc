@@ -8,24 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CONG MINH\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\CM Developer\\.nuget\\packages\\": {},
+    "E:\\Dev\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj",
+      "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC.Utility\\AppMVC.Utility.csproj",
       "projectName": "AppMVC.Utility",
-      "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj",
-      "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\obj\\",
+      "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Utility\\AppMVC.Utility.csproj",
+      "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
+      "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Dev\\Components\\Offline Packages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "E:\\Dev\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

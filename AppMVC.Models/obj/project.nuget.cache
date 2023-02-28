@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cqy9NFvuPQGU/2cLPiK1uzLLOlvOORu62VuwsBfdWr4EqiBNT1G7tI/1FUF4w6b240sq/Ypv2qF66eXcYlIbDA==",
+  "dgSpecHash": "AOVGyD+Ab/y0xClSwYjDsOyjj51GNqXhTkuVaemlIHxCRO9wYRfP05KtD4QgOOIFxomDAsYXvBeJurjqMpksjw==",
   "success": true,
-  "projectFilePath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj",
+  "projectFilePath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

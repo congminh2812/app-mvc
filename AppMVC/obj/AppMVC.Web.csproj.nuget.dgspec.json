@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj": {}
+    "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.Web.csproj": {}
   },
   "projects": {
-    "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
+    "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
+        "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
         "projectName": "AppMVC.DataAccess",
-        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\obj\\",
+        "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
+        "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Dev\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\Dev\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj": {
-                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj"
+              "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj": {
+                "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj"
               }
             }
           }
@@ -88,21 +88,21 @@
         }
       }
     },
-    "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj": {
+    "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj",
+        "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj",
         "projectName": "AppMVC.Models",
-        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj",
-        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\obj\\",
+        "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj",
+        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
+        "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Dev\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -110,7 +110,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\Dev\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -148,21 +148,21 @@
         }
       }
     },
-    "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj": {
+    "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj",
+        "projectUniqueName": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.Web.csproj",
         "projectName": "AppMVC.Web",
-        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj",
-        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
-        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\obj\\",
+        "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\AppMVC.Web.csproj",
+        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
+        "outputPath": "E:\\ProjectASP\\app-mvc\\AppMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Dev\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,18 +170,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\Dev\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
-                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj"
+              "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
+                "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj"
               },
-              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj": {
-                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj"
+              "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj": {
+                "projectPath": "E:\\ProjectASP\\app-mvc\\AppMVC.Models\\AppMVC.Models.csproj"
               }
             }
           }

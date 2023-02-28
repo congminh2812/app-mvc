@@ -9,6 +9,7 @@ namespace AppMVC.DataAccess.Data
         { }
 
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Models.Type> Types{ get; set; }
+        public DbSet<Models.Type> Types { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
