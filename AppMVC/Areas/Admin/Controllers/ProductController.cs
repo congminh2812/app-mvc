@@ -1,5 +1,6 @@
 ﻿using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
+using AppMVC.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -21,22 +22,38 @@ namespace AppMVC.Web.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)
         {
-            var product = new Product();
             IEnumerable<SelectListItem> categoryList = _unitOfWork.Category.GetAll().Select(s => new SelectListItem { Text = s.Name, Value = s.Id.ToString() });
             IEnumerable<SelectListItem> typeList = _unitOfWork.Type.GetAll().Select(s => new SelectListItem { Text = s.Name, Value = s.Id.ToString() });
+
+            var productVM = new ProductVM
+            {
+                Product =new Product(),
+                CategoryList = categoryList,
+                TypeList = typeList,
+            };
 
             if (id is null or 0)
             {
                 // create product
-                ViewBag.CategoryList = categoryList;
-                ViewData["TypeList"] = typeList;
-                return View(product);
+                return View(productVM);
             }
             else
             {
                 // update product
             }
-            return View(product);
+            return View(productVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(ProductVM productVM, IFormFile file)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+
+            return View(productVM);
         }
 
     }
