@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eguUlGd26EVl1lNTXhlLoy5WdrS3itaygl1tgiOBr0I=",
+  "Hash": "CFIQXVGhpXLZ7n+5j6R4twi2bkuo8Ap6d5dvw5YgZaI=",
   "Source": "AppMVC.Web",
   "BasePath": "_content/AppMVC.Web",
   "Mode": "Default",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\images\\product\\8a0ca47f-d062-4068-a49e-f1d92af8dd40.png",
+      "SourceId": "AppMVC.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\",
+      "BasePath": "_content/AppMVC.Web",
+      "RelativePath": "images/product/8a0ca47f-d062-4068-a49e-f1d92af8dd40.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\8a0ca47f-d062-4068-a49e-f1d92af8dd40.png"
+    },
+    {
+      "Identity": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\js\\product.js",
+      "SourceId": "AppMVC.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\",
+      "BasePath": "_content/AppMVC.Web",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\js\\site.js",

@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\images\\product\\8a0ca47f-d062-4068-a49e-f1d92af8dd40.png",
+      "PackagePath": "staticwebassets\\images\\product\\8a0ca47f-d062-4068-a49e-f1d92af8dd40.png"
+    },
+    {
+      "Id": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
       "Id": "E:\\ProjectASP\\app-mvc\\AppMVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

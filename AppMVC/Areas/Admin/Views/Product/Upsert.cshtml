@@ -1,6 +1,6 @@
 ﻿@model AppMVC.Models.ViewModels.ProductVM
 
-<form method="post" asp-action="Edit" enctype="multipart/form-data">
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
     <div class="border p-3 mt-4 row">
         <div class="row pb-2">
             <h2 class="text-primary">@(Model.Product.Id == 0 ? "Create" : "Edit") Product</h2>
@@ -49,7 +49,7 @@
         </div>
         <div class="mb-3 col-6">
             <label asp-for="Product.ImageUrl"></label>
-            <input type="file" id="uploadBox" class="form-control" />
+            <input type="file" id="uploadBox" name="file" class="form-control" />
         </div>
         <div class="mb-3 col-6">
             <label asp-for="Product.CategoryId"></label>

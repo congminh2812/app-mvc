@@ -21,6 +21,10 @@
     <ProjectReference Include="..\AppMVC.Models\AppMVC.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\product\" />
+  </ItemGroup>
+
 </Project>
 <!--
     - This is project file.
