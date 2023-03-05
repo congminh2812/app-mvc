@@ -559,3 +559,6 @@ D:\ASP.Net Core API\AppMVC\AppMVC\obj\Debug\net7.0\ref\AppMVC.Web.dll
 E:\ProjectASP\app-mvc\AppMVC\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 E:\ProjectASP\app-mvc\AppMVC\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 E:\ProjectASP\app-mvc\AppMVC\obj\Debug\net7.0\AppMVC.Web.MvcApplicationPartsAssemblyInfo.cs
+D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\ASP.Net Core API\AppMVC\AppMVC\obj\Debug\net7.0\AppMVC.Web.MvcApplicationPartsAssemblyInfo.cs

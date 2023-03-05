@@ -15,11 +15,11 @@ namespace AppMVC.Web.Areas.Admin.Controllers
         public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
-            _webHostEnvironment=webHostEnvironment;
+            _webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
-            IEnumerable<Product> listProduct = _unitOfWork.Product.GetAll();
+            IEnumerable<Product> listProduct = _unitOfWork.Product.GetAll(includeProperties: "Category,Type");
             return View(listProduct);
         }
 
@@ -30,20 +30,14 @@ namespace AppMVC.Web.Areas.Admin.Controllers
 
             var productVM = new ProductVM
             {
-                Product =new Product(),
+                Product = new Product(),
                 CategoryList = categoryList,
                 TypeList = typeList,
             };
 
-            if (id is null or 0)
-            {
-                // create product
-                return View(productVM);
-            }
-            else
-            {
-                // update product
-            }
+            if (!(id is null or 0))
+                productVM.Product = _unitOfWork.Product.GetFirstOrDefault(s => s.Id == id);
+
             return View(productVM);
         }
 
@@ -60,15 +54,23 @@ namespace AppMVC.Web.Areas.Admin.Controllers
                     string uploads = Path.Combine(wwwRootPath, @"images\product\");
                     string extension = Path.GetExtension(file.FileName);
 
-                    using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                    if (productVM.Product.ImageUrl != null)
                     {
-                        file.CopyTo(fileStream);
+                        var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath))
+                            System.IO.File.Delete(oldImagePath);
                     }
+
+                    using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                        file.CopyTo(fileStream);
 
                     productVM.Product.ImageUrl = @$"\images\product\{fileName + extension}";
                 }
 
-                _unitOfWork.Product.Add(productVM.Product);
+                if (productVM.Product.Id == 0)
+                    _unitOfWork.Product.Add(productVM.Product);
+                else _unitOfWork.Product.Update(productVM.Product);
+
                 _unitOfWork.Save();
                 return RedirectToAction("Index");
             }
@@ -80,8 +82,28 @@ namespace AppMVC.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            IEnumerable<Product> listProduct = _unitOfWork.Product.GetAll();
+            IEnumerable<Product> listProduct = _unitOfWork.Product.GetAll(includeProperties: "Category,Type");
             return Json(new { data = listProduct });
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int id) { 
+            var obj = _unitOfWork.Product.GetFirstOrDefault(s => s.Id == id);
+
+            if (obj is null)
+                return Json(new { success = false, message = "Not found product" });
+
+            if (obj.ImageUrl != null)
+            {
+                var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
+                if (System.IO.File.Exists(oldImagePath))
+                    System.IO.File.Delete(oldImagePath);
+            }
+
+            _unitOfWork.Product.Remove(obj);
+            _unitOfWork.Save();
+
+            return Json(new { success = true, message = "Delete successfully" });
         }
         #endregion
     }

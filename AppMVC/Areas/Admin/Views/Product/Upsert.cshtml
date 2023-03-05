@@ -2,11 +2,13 @@
 
 <form method="post" asp-action="Upsert" enctype="multipart/form-data">
     <div class="border p-3 mt-4 row">
-        <div class="row pb-2">
+        <div class="col-12 pb-2">
             <h2 class="text-primary">@(Model.Product.Id == 0 ? "Create" : "Edit") Product</h2>
             <hr />
         </div>
         <div asp-validation-summary="All"></div>
+        <input asp-for="Product.Id" hidden />
+        <input asp-for="Product.ImageUrl" hidden />
         <div class="mb-3">
             <label asp-for="Product.Title"></label>
             <input asp-for="Product.Title" class="form-control" />
@@ -52,6 +54,9 @@
             <input type="file" id="uploadBox" name="file" class="form-control" />
         </div>
         <div class="mb-3 col-6">
+            <img src="@Model.Product.ImageUrl" style="width: 100%" />
+        </div>
+        <div class="mb-3 col-6">
             <label asp-for="Product.CategoryId"></label>
             <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
                 <option disabled selected>--Select Category--</option>
@@ -74,7 +79,7 @@
             {
                 <button type="submit" class="btn btn-primary" style="width: 150px;">Update</button>
             }
-            <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width: 150px;">Back to List</a>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width: 150px;">Back to List</a>
         </div>
     </div>
 </form>
@@ -85,6 +90,13 @@
     }
 
     <script>
+        tinymce.init({
+            selector: 'textarea',  // change this value according to your HTML
+            plugins: 'a_tinymce_plugin',
+            a_plugin_option: true,
+            a_configuration_option: 400
+        });
+
         function ValidationInput() {
             if (document.getElementById("uploadBox").value == "") {
                 Swal.fire({
