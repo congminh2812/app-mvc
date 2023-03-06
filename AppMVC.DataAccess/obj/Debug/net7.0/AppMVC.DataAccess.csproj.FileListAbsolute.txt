@@ -32,3 +32,20 @@ D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.Models.pdb
 D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.csproj.CopyComplete
 D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.genruntimeconfig.cache
 D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\obj\Debug\net7.0\ref\AppMVC.DataAccess.dll
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.deps.json
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.runtimeconfig.json
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.dll
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.DataAccess.pdb
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.Models.dll
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.Models.pdb
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.csproj.AssemblyReference.cache
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.AssemblyInfoInputs.cache
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.AssemblyInfo.cs
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.csproj.CoreCompileInputs.cache
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.csproj.CopyComplete
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.dll
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\refint\AppMVC.DataAccess.dll
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.pdb
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.genruntimeconfig.cache
+E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\ref\AppMVC.DataAccess.dll
