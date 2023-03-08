@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\product\\8a0ca47f-d062-4068-a49e-f1d92af8dd40.png"
     },
     {
+      "Id": "E:\\ProjectASP\\app-mvc2\\AppMVC\\wwwroot\\images\\product\\bfd94c68-bccb-4fb9-b48f-5e27a6a32319.png",
+      "PackagePath": "staticwebassets\\images\\product\\bfd94c68-bccb-4fb9-b48f-5e27a6a32319.png"
+    },
+    {
       "Id": "E:\\ProjectASP\\app-mvc2\\AppMVC\\wwwroot\\js\\product.js",
       "PackagePath": "staticwebassets\\js\\product.js"
     },

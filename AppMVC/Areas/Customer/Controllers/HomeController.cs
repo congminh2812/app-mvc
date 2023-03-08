@@ -1,5 +1,6 @@
 ﻿using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
+using AppMVC.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -22,6 +23,17 @@ namespace AppMVC.Web.Areas.Customer.Controllers
         {
             IEnumerable<Product> listProduct = _unitOfWork.Product.GetAll(includeProperties: "Category,Type");
             return View(listProduct);
+        }
+
+        public IActionResult Detail(int id)
+        {
+            var shoppingCart = new ShoppingCart
+            {
+                Count = 1,
+                Product = _unitOfWork.Product.GetFirstOrDefault(s => s.Id == id, includeProperties: "Category,Type")
+            };
+
+            return View(shoppingCart);
         }
 
         public IActionResult Privacy()

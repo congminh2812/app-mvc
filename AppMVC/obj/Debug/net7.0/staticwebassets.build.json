@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dibwT8Wm5AY2xad79Jv1tpOARfGxsRcr5JtS9rySIq8=",
+  "Hash": "pquugQUMUD0YBmir4zppRWSHMDvNJjIOBq9xksVMmFA=",
   "Source": "AppMVC.Web",
   "BasePath": "_content/AppMVC.Web",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\8a0ca47f-d062-4068-a49e-f1d92af8dd40.png"
+    },
+    {
+      "Identity": "E:\\ProjectASP\\app-mvc2\\AppMVC\\wwwroot\\images\\product\\bfd94c68-bccb-4fb9-b48f-5e27a6a32319.png",
+      "SourceId": "AppMVC.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ProjectASP\\app-mvc2\\AppMVC\\wwwroot\\",
+      "BasePath": "_content/AppMVC.Web",
+      "RelativePath": "images/product/bfd94c68-bccb-4fb9-b48f-5e27a6a32319.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\bfd94c68-bccb-4fb9-b48f-5e27a6a32319.png"
     },
     {
       "Identity": "E:\\ProjectASP\\app-mvc2\\AppMVC\\wwwroot\\js\\product.js",
