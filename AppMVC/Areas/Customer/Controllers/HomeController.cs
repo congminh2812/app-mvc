@@ -25,7 +25,7 @@ namespace AppMVC.Web.Areas.Customer.Controllers
             return View(listProduct);
         }
 
-        public IActionResult Detail(int id)
+        public IActionResult Details(int? id)
         {
             var shoppingCart = new ShoppingCart
             {
