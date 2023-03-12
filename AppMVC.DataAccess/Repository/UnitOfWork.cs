@@ -9,6 +9,7 @@ namespace AppMVC.DataAccess.Repository
         public ICategoryRepository Category { get; private set; }
         public ITypeRepository Type { get; private set; }
         public IProductRepository Product { get; private set; }
+        public ICompanyRepository Company { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
@@ -16,6 +17,7 @@ namespace AppMVC.DataAccess.Repository
             Category = new CategoryRepository(_db);
             Type = new TypeRepository(_db);
             Product = new ProductRepository(_db);
+            Company = new CompanyRepository(_db);
         }
 
         public void Save()

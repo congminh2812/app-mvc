@@ -5,6 +5,7 @@
         ICategoryRepository Category { get; }
         ITypeRepository Type { get; }
         IProductRepository Product { get; }
+        ICompanyRepository Company { get; }
         void Save();
     }
 }

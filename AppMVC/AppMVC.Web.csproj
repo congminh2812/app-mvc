@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AppMVC.DataAccess\AppMVC.DataAccess.csproj" />
     <ProjectReference Include="..\AppMVC.Models\AppMVC.Models.csproj" />
+    <ProjectReference Include="..\AppMVC.Utility\AppMVC.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
