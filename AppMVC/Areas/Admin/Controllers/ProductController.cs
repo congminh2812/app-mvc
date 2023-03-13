@@ -3,6 +3,7 @@ using AppMVC.Models;
 using AppMVC.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AppMVC.Web.Areas.Admin.Controllers
 {
@@ -83,6 +84,7 @@ namespace AppMVC.Web.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             IEnumerable<Product> listProduct = _unitOfWork.Product.GetAll(includeProperties: "Category,Type");
+
             return Json(new { data = listProduct });
         }
 

@@ -862,3 +862,5 @@ D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\Microsoft.Extensions.Options.
 D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\appsettings.Development.json
 D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\AppMVC.Utility.dll
 D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\AppMVC.Utility.pdb
+E:\ProjectASP\app-mvc2\AppMVC\bin\Debug\net7.0\AppMVC.Utility.dll
+E:\ProjectASP\app-mvc2\AppMVC\bin\Debug\net7.0\AppMVC.Utility.pdb
