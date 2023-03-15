@@ -19,5 +19,8 @@ namespace AppMVC.Models
 
         [ForeignKey("ApplicationUserId")]
         public ApplicationUser User { get; set; }
+
+        [NotMapped]
+        public double Price { get; set; }
     }
 }

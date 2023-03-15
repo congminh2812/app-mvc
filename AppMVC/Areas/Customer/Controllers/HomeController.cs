@@ -57,7 +57,7 @@ namespace AppMVC.Web.Areas.Customer.Controllers
 
             _unitOfWork.Save();
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Cart");
         }
 
         public IActionResult Privacy()

@@ -22,9 +22,13 @@ namespace AppMVC.DataAccess.Repository
             this.dbSet.Add(entity);
         }
 
-        public IEnumerable<T> GetAll(string? includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
+
+            if (filter is not null)
+                query = query.Where(filter);
+
             if (includeProperties is not null)
                 foreach (var property in includeProperties.Split(',', StringSplitOptions.RemoveEmptyEntries))
                     query = query.Include(property);
