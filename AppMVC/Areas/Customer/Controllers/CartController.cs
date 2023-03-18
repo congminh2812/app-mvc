@@ -17,7 +17,7 @@ namespace AppMVC.Web.Areas.Customer.Controllers
 
         public CartController(IUnitOfWork unitOfWork)
         {
-            _unitOfWork=unitOfWork;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
@@ -27,38 +27,48 @@ namespace AppMVC.Web.Areas.Customer.Controllers
 
             ShoppingCartVM = new ShoppingCartVM
             {
-                ListCart = _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId == claims!.Value, includeProperties: "Product")
+                ListCart = _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId == claims!.Value, includeProperties: "Product"),
+                OrderHeader = new()
             };
 
             foreach (var item in ShoppingCartVM.ListCart)
                 item.Price = GetPriceBasedOnQuantity(item);
 
-            ShoppingCartVM.CartTotal = ShoppingCartVM.ListCart.Sum(s => s.Price * s.Count);
+            ShoppingCartVM.OrderHeader.OrderTotal = ShoppingCartVM.ListCart.Sum(s => s.Price * s.Count);
 
             return View(ShoppingCartVM);
         }
 
         public IActionResult Summary()
         {
-            //var claimsIdentity = (ClaimsIdentity)User.Identity!;
-            //var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            var claimsIdentity = (ClaimsIdentity)User.Identity!;
+            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
-            //ShoppingCartVM = new ShoppingCartVM
-            //{
-            //    ListCart = _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId == claims!.Value, includeProperties: "Product")
-            //};
+            ShoppingCartVM = new ShoppingCartVM
+            {
+                ListCart = _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId == claims!.Value, includeProperties: "Product"),
+                OrderHeader = new()
+            };
 
-            //foreach (var item in ShoppingCartVM.ListCart)
-            //    item.Price = GetPriceBasedOnQuantity(item);
+            ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUser.GetFirstOrDefault(s => s.Id == claims.Value);
 
-            //ShoppingCartVM.CartTotal = ShoppingCartVM.ListCart.Sum(s => s.Price * s.Count);
+            ShoppingCartVM.OrderHeader.PhoneNumber = ShoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
+            ShoppingCartVM.OrderHeader.StreetAddress = ShoppingCartVM.OrderHeader.ApplicationUser.StreetAddress;
+            ShoppingCartVM.OrderHeader.City = ShoppingCartVM.OrderHeader.ApplicationUser.City;
+            ShoppingCartVM.OrderHeader.State = ShoppingCartVM.OrderHeader.ApplicationUser.State;
+            ShoppingCartVM.OrderHeader.PostalCode = ShoppingCartVM.OrderHeader.ApplicationUser.PostalCode;
+            ShoppingCartVM.OrderHeader.Name = ShoppingCartVM.OrderHeader.ApplicationUser.Name;
 
-            //return View(ShoppingCartVM);
+            foreach (var item in ShoppingCartVM.ListCart)
+                item.Price = GetPriceBasedOnQuantity(item);
 
-            return View();
+            ShoppingCartVM.OrderHeader.OrderTotal = ShoppingCartVM.ListCart.Sum(s => s.Price * s.Count);
+
+            return View(ShoppingCartVM);
         }
 
-        public IActionResult Plus(int cartId) { 
+        public IActionResult Plus(int cartId)
+        {
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(c => c.Id == cartId);
 
             if (cart is not null)
@@ -76,7 +86,7 @@ namespace AppMVC.Web.Areas.Customer.Controllers
 
             if (cart.Count - 1 <= 0)
                 _unitOfWork.ShoppingCart.Remove(cart);
-            else 
+            else
                 _unitOfWork.ShoppingCart.Decreasement(cart, 1);
 
             _unitOfWork.Save();

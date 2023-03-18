@@ -1,4 +1,5 @@
-﻿
+﻿@model AppMVC.Models.ViewModels.ShoppingCartVM
+
 <form method="post">
     <br />
     <div class="container">
@@ -28,7 +29,7 @@
                                     <label>Name</label>
                                 </div>
                                 <div class="col-9">
-                                    <input class="form-control" />
+                                    <input asp-for="@Model.OrderHeader.Name" class="form-control" />
                                     <span class="text-danger"></span>
                                 </div>
                             </div>
@@ -37,7 +38,7 @@
                                     <label>Phone</label>
                                 </div>
                                 <div class="col-9">
-                                    <input class="form-control" />
+                                    <input asp-for="@Model.OrderHeader.PhoneNumber" class="form-control" />
                                     <span class="text-danger"></span>
                                 </div>
                             </div>
@@ -46,7 +47,7 @@
                                     <label>Street Address</label>
                                 </div>
                                 <div class="col-9">
-                                    <input class="form-control" />
+                                    <input asp-for="@Model.OrderHeader.StreetAddress" class="form-control" />
                                     <span class="text-danger"></span>
                                 </div>
                             </div>
@@ -55,7 +56,7 @@
                                     <label>City</label>
                                 </div>
                                 <div class="col-9">
-                                    <input class="form-control" />
+                                    <input asp-for="@Model.OrderHeader.City" class="form-control" />
                                     <span class="text-danger"></span>
                                 </div>
                             </div>
@@ -64,7 +65,7 @@
                                     <label>State</label>
                                 </div>
                                 <div class="col-9">
-                                    <input class="form-control" />
+                                    <input asp-for="@Model.OrderHeader.State" class="form-control" />
                                     <span class="text-danger"></span>
                                 </div>
                             </div>
@@ -73,7 +74,7 @@
                                     <label>Postal Code</label>
                                 </div>
                                 <div class="col-9">
-                                    <input class="form-control" />
+                                    <input asp-for="@Model.OrderHeader.PostalCode" class="form-control" />
                                     <span class="text-danger"></span>
                                 </div>
                             </div>
@@ -83,7 +84,7 @@
                                 <span class="text-info">Order Summary:</span>
                             </h4>
                             <ul class="list-group mb-3">
-                             @*   @foreach (var details in Model.ListCart)
+                                @foreach (var details in Model.ListCart)
                                 {
                                     <li class="list-group-item d-flex justify-content-between">
                                         <div>
@@ -92,10 +93,10 @@
                                         </div>
                                         <span class="text-muted">@((details.Price * details.Count).ToString("c")) </span>
                                     </li>
-                                }*@
+                                }
                                 <li class="list-group-item d-flex justify-content-between bg-light">
                                     <small class="text-info">Total (USD)</small>
-                                    <strong class="text-info"></strong>
+                                    <strong class="text-info">@Model.OrderHeader.OrderTotal.ToString("c")</strong>
                                 </li>
                             </ul>
                         </div>
