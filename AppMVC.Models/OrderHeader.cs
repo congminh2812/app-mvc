@@ -7,6 +7,8 @@ namespace AppMVC.Models
     public class OrderHeader
     {
         public int Id { get; set; }
+
+        [ValidateNever]
         public string ApplicationUserId { get; set; }
 
         [ForeignKey("ApplicationUserId")]
@@ -15,6 +17,7 @@ namespace AppMVC.Models
 
         [Required]
         public DateTime OrderDate { get;set; }
+
         public DateTime ShippingDate { get;set; }
         public double OrderTotal { get; set; }
         public string? OrderStatus { get; set; }

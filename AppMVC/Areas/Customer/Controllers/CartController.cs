@@ -1,6 +1,7 @@
 ﻿using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
 using AppMVC.Models.ViewModels;
+using AppMVC.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -13,6 +14,7 @@ namespace AppMVC.Web.Areas.Customer.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
 
+        [BindProperty]
         public ShoppingCartVM ShoppingCartVM { get; set; }
 
         public CartController(IUnitOfWork unitOfWork)
@@ -65,6 +67,50 @@ namespace AppMVC.Web.Areas.Customer.Controllers
             ShoppingCartVM.OrderHeader.OrderTotal = ShoppingCartVM.ListCart.Sum(s => s.Price * s.Count);
 
             return View(ShoppingCartVM);
+        }
+
+        [HttpPost]
+        [ActionName("Summary")]
+        public IActionResult SummaryPOST()
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity!;
+            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            ShoppingCartVM.ListCart = _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId == claims!.Value, includeProperties: "Product");
+
+            ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusPending;
+            ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusPending;
+            ShoppingCartVM.OrderHeader.OrderDate = DateTime.Now;
+            ShoppingCartVM.OrderHeader.ApplicationUserId = claims.Value;
+
+            if (!ModelState.IsValid) return View(ShoppingCartVM);
+
+            _unitOfWork.OrderHeader.Add(ShoppingCartVM.OrderHeader);
+            _unitOfWork.Save();
+
+            foreach (var item in ShoppingCartVM.ListCart)
+                item.Price = GetPriceBasedOnQuantity(item);
+
+            ShoppingCartVM.OrderHeader.OrderTotal = ShoppingCartVM.ListCart.Sum(s => s.Price * s.Count);
+
+            foreach (var item in ShoppingCartVM.ListCart)
+            {
+                OrderDetail orderDetail = new()
+                {
+                    ProductId = item.ProductId,
+                    OrderId = ShoppingCartVM.OrderHeader.Id,
+                    Price = item.Price,
+                    Count = item.Count,
+                };
+
+                _unitOfWork.OrderDetail.Add(orderDetail);
+                _unitOfWork.Save();
+            }
+
+            _unitOfWork.ShoppingCart.RemoveRange(ShoppingCartVM.ListCart);
+            _unitOfWork.Save();
+
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Plus(int cartId)
