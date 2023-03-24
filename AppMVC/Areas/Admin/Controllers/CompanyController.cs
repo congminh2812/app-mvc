@@ -1,13 +1,13 @@
 ﻿using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
-using AppMVC.Models.ViewModels;
-using Microsoft.AspNetCore.Hosting;
+using AppMVC.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace AppMVC.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CompanyController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -1,13 +1,15 @@
 ﻿using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
 using AppMVC.Models.ViewModels;
+using AppMVC.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AppMVC.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -84,6 +86,18 @@ namespace AppMVC.Web.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             IEnumerable<Product> listProduct = _unitOfWork.Product.GetAll(includeProperties: "Category,Type");
+
+            return Json(new { data = listProduct });
+        }
+
+        [HttpGet]
+        public IActionResult TestTracking()
+        {
+            var listProduct = _unitOfWork.Product.GetFirstOrDefault(s => s.Id == 1);
+
+            listProduct.Author = "Test Tracking";
+
+            _unitOfWork.Save();
 
             return Json(new { data = listProduct });
         }

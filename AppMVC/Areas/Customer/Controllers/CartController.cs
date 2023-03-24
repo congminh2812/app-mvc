@@ -128,10 +128,16 @@ namespace AppMVC.Web.Areas.Customer.Controllers
 
         public IActionResult Minus(int cartId)
         {
+            var claimsIdentity = (ClaimsIdentity)User.Identity!;
+            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(c => c.Id == cartId);
 
             if (cart.Count - 1 <= 0)
+            {
                 _unitOfWork.ShoppingCart.Remove(cart);
+                var count = _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId ==  claims.Value).Count();
+                HttpContext.Session.SetInt32(SD.SessionShoppingCart, count - 1);
+            }
             else
                 _unitOfWork.ShoppingCart.Decreasement(cart, 1);
 
@@ -142,7 +148,12 @@ namespace AppMVC.Web.Areas.Customer.Controllers
 
         public IActionResult Remove(int cartId)
         {
+            var claimsIdentity = (ClaimsIdentity)User.Identity!;
+            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(c => c.Id == cartId);
+            var count = _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId ==  claims.Value).Count();
+            HttpContext.Session.SetInt32(SD.SessionShoppingCart, count - 1);
 
             if (cart is not null)
             {

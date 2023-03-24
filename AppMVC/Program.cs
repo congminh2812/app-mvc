@@ -18,14 +18,30 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProvid
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
 builder.Services.AddRazorPages();
+
+builder.Services.AddAuthentication().AddFacebook(options =>
+{
+    options.AppId = "143746358629337";
+    options.AppSecret = "deeb5ab74ff7cdece3957aa3a42e9253";
+});
+
 builder.Services.ConfigureApplicationCookie(option =>
 {
     option.LoginPath = "/Identity/Account/Login";
     option.LogoutPath = "/Identity/Account/Logout";
     option.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(100);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
+
+CookiePolicyOptions cookiePolicy = new CookiePolicyOptions() { Secure = CookieSecurePolicy.Always };
+app.UseCookiePolicy(cookiePolicy);
 
 if (!app.Environment.IsDevelopment())
 {
@@ -40,6 +56,8 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapRazorPages();
 app.MapControllerRoute(

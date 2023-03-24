@@ -1,6 +1,7 @@
 ﻿using AppMVC.DataAccess.Repository.IRepository;
 using AppMVC.Models;
 using AppMVC.Models.ViewModels;
+using AppMVC.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -51,11 +52,17 @@ namespace AppMVC.Web.Areas.Customer.Controllers
             var cartFromDb = _unitOfWork.ShoppingCart.GetFirstOrDefault(s => s.ApplicationUserId == shoppingCart.ApplicationUserId && s.ProductId == shoppingCart.ProductId);
 
             if (cartFromDb is null)
+            {
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionShoppingCart, _unitOfWork.ShoppingCart.GetAll(s => s.ApplicationUserId == claims.Value).Count());
+            }
             else
+            {
                 _unitOfWork.ShoppingCart.Increasement(cartFromDb, shoppingCart.Count);
+                _unitOfWork.Save();
+            }
 
-            _unitOfWork.Save();
 
             return RedirectToAction("Index", "Cart");
         }
