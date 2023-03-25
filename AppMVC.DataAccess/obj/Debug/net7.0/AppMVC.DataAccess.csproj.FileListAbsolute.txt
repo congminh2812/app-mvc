@@ -49,3 +49,5 @@ E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\refint\AppMVC.DataAcce
 E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.pdb
 E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\AppMVC.DataAccess.genruntimeconfig.cache
 E:\ProjectASP\app-mvc2\AppMVC.DataAccess\obj\Debug\net7.0\ref\AppMVC.DataAccess.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.Utility.dll
+D:\ASP.Net Core API\AppMVC\AppMVC.DataAccess\bin\Debug\net7.0\AppMVC.Utility.pdb

@@ -868,3 +868,7 @@ E:\ProjectASP\app-mvc2\AppMVC\bin\Debug\net7.0\MailKit.dll
 E:\ProjectASP\app-mvc2\AppMVC\bin\Debug\net7.0\MimeKit.dll
 E:\ProjectASP\app-mvc2\AppMVC\bin\Debug\net7.0\BouncyCastle.Crypto.dll
 E:\ProjectASP\app-mvc2\AppMVC\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\MailKit.dll
+D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\MimeKit.dll
+D:\ASP.Net Core API\AppMVC\AppMVC\bin\Debug\net7.0\BouncyCastle.Crypto.dll

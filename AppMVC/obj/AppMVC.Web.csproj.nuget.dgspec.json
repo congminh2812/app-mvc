@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProjectASP\\app-mvc2\\AppMVC\\AppMVC.Web.csproj": {}
+    "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj": {}
   },
   "projects": {
-    "E:\\ProjectASP\\app-mvc2\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
+    "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectASP\\app-mvc2\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
+        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
         "projectName": "AppMVC.DataAccess",
-        "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.DataAccess\\obj\\",
+        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
+        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Dev\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "E:\\Dev\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\AppMVC.Models.csproj": {
-                "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\AppMVC.Models.csproj"
+              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj": {
+                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj"
+              },
+              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj": {
+                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj"
               }
             }
           }
@@ -100,21 +103,21 @@
         }
       }
     },
-    "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\AppMVC.Models.csproj": {
+    "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\AppMVC.Models.csproj",
+        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj",
         "projectName": "AppMVC.Models",
-        "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\AppMVC.Models.csproj",
-        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\obj\\",
+        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj",
+        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
+        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Dev\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,7 +125,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "E:\\Dev\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -170,21 +173,21 @@
         }
       }
     },
-    "E:\\ProjectASP\\app-mvc2\\AppMVC.Utility\\AppMVC.Utility.csproj": {
+    "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectASP\\app-mvc2\\AppMVC.Utility\\AppMVC.Utility.csproj",
+        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj",
         "projectName": "AppMVC.Utility",
-        "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.Utility\\AppMVC.Utility.csproj",
-        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.Utility\\obj\\",
+        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj",
+        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
+        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Dev\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -192,7 +195,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "E:\\Dev\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -244,21 +247,21 @@
         }
       }
     },
-    "E:\\ProjectASP\\app-mvc2\\AppMVC\\AppMVC.Web.csproj": {
+    "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectASP\\app-mvc2\\AppMVC\\AppMVC.Web.csproj",
+        "projectUniqueName": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj",
         "projectName": "AppMVC.Web",
-        "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC\\AppMVC.Web.csproj",
-        "packagesPath": "C:\\Users\\CM Developer\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectASP\\app-mvc2\\AppMVC\\obj\\",
+        "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\AppMVC.Web.csproj",
+        "packagesPath": "C:\\Users\\CONG MINH\\.nuget\\packages\\",
+        "outputPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Dev\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CM Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\CONG MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -266,21 +269,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "E:\\Dev\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\ProjectASP\\app-mvc2\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
-                "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj"
+              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj": {
+                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.DataAccess\\AppMVC.DataAccess.csproj"
               },
-              "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\AppMVC.Models.csproj": {
-                "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.Models\\AppMVC.Models.csproj"
+              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj": {
+                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Models\\AppMVC.Models.csproj"
               },
-              "E:\\ProjectASP\\app-mvc2\\AppMVC.Utility\\AppMVC.Utility.csproj": {
-                "projectPath": "E:\\ProjectASP\\app-mvc2\\AppMVC.Utility\\AppMVC.Utility.csproj"
+              "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj": {
+                "projectPath": "D:\\ASP.Net Core API\\AppMVC\\AppMVC.Utility\\AppMVC.Utility.csproj"
               }
             }
           }

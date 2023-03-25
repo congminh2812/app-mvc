@@ -2646,6 +2646,7 @@
       "AppMVC.DataAccess/1.0.0": {
         "dependencies": {
           "AppMVC.Models": "1.0.0",
+          "AppMVC.Utility": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.3",
           "Microsoft.AspNetCore.Identity.UI": "7.0.3",
           "Microsoft.EntityFrameworkCore": "7.0.3",
